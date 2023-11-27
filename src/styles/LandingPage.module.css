@@ -79,9 +79,11 @@
 
 .ContentAdvantages {
     width: 100%;
+    max-width: 900px;
     min-width: 360px;
     height: 100%;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .AdvantegesTitle {
