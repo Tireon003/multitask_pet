@@ -1,0 +1,16 @@
+.main_list_section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-sizing: border-box;
+    padding: 0 20px;
+    flex-grow: 1;
+}
+
+.list_task_priority {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color:black;
+    margin-top: 10px;
+}
