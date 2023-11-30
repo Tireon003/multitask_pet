@@ -4,6 +4,8 @@ import TaskSection from './TaskSection';
 
 
 export default function Dashboard() {
+
+    const titles = ["High", "Medium", "Low"];
     
     return (
         <>
@@ -18,9 +20,7 @@ export default function Dashboard() {
                 </div>
             </header>
             <main className={styles.main_wrapper}>
-                <TaskSection  priority={"High priority"}/>
-                <TaskSection  priority={"Medium priority"}/>
-                <TaskSection  priority={"Low priority"}/>
+                {titles.map(title => <TaskSection  titlePriority={title}/>)}
             </main>
         </>
     );
