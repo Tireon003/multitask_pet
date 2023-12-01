@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "../styles/LandingPage.module.css";
 
 export default function LandingPage() {
@@ -8,8 +9,8 @@ export default function LandingPage() {
                 <div className={styles.HeaderBody}>
                     <span className={styles.HeaderLogo}>MultiTask</span>
                     <nav className={styles.HeaverNav}>
-                        <button className={styles.HeaderNavButton}>Sign Up</button>
-                        <button className={styles.HeaderNavButton}>Sign In</button>
+                        <Link to='/signup'><button className={styles.HeaderNavButton}>Sign Up</button></Link>
+                        <Link to='/login'><button className={styles.HeaderNavButton}>Log In</button></Link>
                     </nav>
                 </div>
             </header>
